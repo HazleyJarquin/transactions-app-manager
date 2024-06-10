@@ -12,34 +12,15 @@ export default function Sidebar() {
   return (
     <div
       style={{
-        width: "250px", // Ajuste del ancho
+        width: "250px",
         height: "100vh",
         display: "flex",
         flexDirection: "column",
-        borderRight: "1px solid #e5e7eb",
-        backgroundColor: theme === "dark" ? "#f9fafb" : "#333", // Fondo claro
-        padding: "20px", // Padding para espaciar el contenido
+        gap: "20px",
+        backgroundColor: theme === "dark" ? "hsl(0 0% 10%)" : "#333",
+        padding: "20px",
       }}
     >
-      <Link href="/">
-        <div
-          style={{
-            width: "100%",
-            height: "120px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: "#4f46e5",
-            borderRadius: "10px",
-            marginBottom: "20px",
-          }}
-        >
-          <p style={{ color: "white", fontSize: "24px", fontWeight: "bold" }}>
-            Tapp
-          </p>
-        </div>
-      </Link>
-
       <div>
         <ToggleButton
           darkButtonText="Dark"
@@ -48,6 +29,26 @@ export default function Sidebar() {
           systemButtonText="System"
         />
       </div>
+      <Link href="/">
+        <div
+          style={{
+            width: "100%",
+            height: "120px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: "10px",
+            marginBottom: "20px",
+            border: "1px solid",
+            borderColor: theme === "dark" ? "hsl(0 0% 20%)" : "#f0f0f0",
+          }}
+        >
+          <p style={{ color: "white", fontSize: "24px", fontWeight: "bold" }}>
+            Tapp
+          </p>
+        </div>
+      </Link>
+
       <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
         <NavLinks />
       </div>
@@ -61,7 +62,7 @@ export default function Sidebar() {
             setPassword("");
           }}
         >
-          <NewButton title="hi" />
+          <NewButton title="Sign Out" />
         </Link>
       </div>
     </div>
