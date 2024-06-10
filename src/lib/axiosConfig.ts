@@ -1,13 +1,20 @@
-// lib/axiosConfig.ts
+// src/hooks/useAxiosInstance.ts
+import { useLoginStore } from "@/store/useLoginStore.store";
 import axios from "axios";
 
-const axiosInstance = axios.create({
-  baseURL: "https://sandbox.belvo.com/api",
-  headers: {
-    accept: "application/json",
-    authorization:
-      "Basic YWRmMjY5MjYtYTljNS00NTU5LWE1NzktNDY0MmI3NjYxZGZhOkhubERzbVdVZldfQU5JSHVsWldwODJubmJAN1hvTVM1QVVjY0NUYlFsT1AtS0ZuNUtuNGxibSpVWkJ0VGJFcGg=",
-  },
-});
+const useAxiosInstance = () => {
+  const { id, password } = useLoginStore();
+  const token = Buffer.from(`${id}:${password}`, "utf8").toString("base64");
 
-export default axiosInstance;
+  const axiosInstance = axios.create({
+    baseURL: "https://sandbox.belvo.com/api",
+    headers: {
+      accept: "application/json",
+      authorization: `Basic ${token}`,
+    },
+  });
+
+  return axiosInstance;
+};
+
+export default useAxiosInstance;
