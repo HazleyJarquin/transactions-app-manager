@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Transactions App
+Welcome to the Transactions and Accounts app!
 
-## Getting Started
+This application is a tool to manage your financial transactions and bank accounts efficiently.
+With this app, you can track your income, expenses, and balances in detail.
 
-First, run the development server:
+## 🌐 Demos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Visit the live demo of the App Web:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+If you don't have credentials to login, you can use this:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+*Id:*
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  - adf26926-a9c5-4559-a579-4642b7661dfa
 
-## Learn More
+ *Password:* 
+ 
+ - HnlDsmWUfW_ANIHulZWp82nnb@7XoMS5AUccCTbQlOP-KFn5Kn4lbm*UZBtTbEph
 
-To learn more about Next.js, take a look at the following resources:
+[![Netlify Logo](https://www.netlify.com/img/global/badges/netlify-color-bg.svg)](https://main--transactions-app-hazleyjarquin.netlify.app/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The core technologies include:
+- *Next.js*: For building interactive UIs.
+- *TypeScript*: Used for strong typing to enhance code quality and maintainability.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📦 Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To compile and run this project, follow these steps:
+
+*Installing Dependencies*:
+
+   bash
+   npm install
+   
+
+*Running app web*:
+
+   bash
+   npm run dev
+   
+
+*Create build web*:
+
+   bash
+   npm run build
+   
